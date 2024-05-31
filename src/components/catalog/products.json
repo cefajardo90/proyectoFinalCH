@@ -1,82 +1,82 @@
 [
   {
-    "id": 1,
+    "itemId": 1,
     "nombre": "Tejas/Deflectores Automóvil Renault 9",
     "precio": 90000,
     "descripcion": "Tejas para la protección de la lluvia, ideal para abrir el vidrio de la ventana y permitir que el aire circule dentro del vehículo",
-    "imagen": "images/tejasr9.jpg",
+    "imagen": "/images/tejasr9.jpg",
     "stock": 4,
     "categoria": "tejas"
   },
   {
-    "id": 2,
+    "itemId": 2,
     "nombre": "Tejas/Deflectores Furgón Chevrolet NKR",
     "precio": 110000,
     "descripcion": "Tejas para la protección de la lluvia, ideal para abrir el vidrio de la ventana y permitir que el aire circule dentro del vehículo",
-    "imagen": "images/tejasNKR.jpg",
+    "imagen": "/images/tejasNKR.jpg",
     "stock": 2,
     "categoria": "tejas"
   },
   {
-    "id": 3,
+    "itemId": 3,
     "nombre": "Tejas/Deflectores Camioneta Nissan Frontier NP300",
     "precio": 100000,
     "descripcion": "Tejas para la protección de la lluvia, ideal para abrir el vidrio de la ventana y permitir que el aire circule dentro del vehículo",
-    "imagen": "images/tejasfrontierDC.jpg",
+    "imagen": "/images/tejasfrontierDC.jpg",
     "stock": 3,
     "categoria": "tejas"
   },
   {
-    "id": 4,
+    "itemId": 4,
     "nombre": "Maletín portaherramientas Renault",
     "precio": 40000,
     "descripcion": "Maletín en lona resistente para salvaguardar las herramientas necesarias dentro del vehículo",
-    "imagen": "images/maletinRE.png",
+    "imagen": "/images/maletinRE.png",
     "stock": 10,
     "categoria": "accesorios"
   },
   {
-    "id": 5,
+    "itemId": 5,
     "nombre": "Antena de radio estilo aleta de tiburon",
     "precio": 60000,
     "descripcion": "Antena para frecuencias AM/FM de gran recepcion con el estilo de una aleta de tiburón",
-    "imagen": "images/aletaTIB.png",
+    "imagen": "/images/aletaTIB.png",
     "stock": 5,
     "categoria": "accesorios"
   },
   {
-    "id": 6,
+    "itemId": 6,
     "nombre": "Tira de luz LED para farolas multifuncional",
     "precio": 120000,
     "descripcion": "Tira de luz LED para adaptar en la farola de cualquier vehículo, da un estilo único para las señales de dirección y luz fija",
-    "imagen": "images/tiraLED.jpg",
+    "imagen": "/images/tiraLED.jpg",
     "stock": 10,
     "categoria": "accesorios"
   },
   {
-    "id": 7,
+    "itemId": 7,
     "nombre": "Tapetes universales de caucho",
     "precio": 80000,
     "descripcion": "Tapetes en caucho grueso que garantizan la protección del piso, además de ser más fáciles de limpiar y de secado mucho más rápido.",
-    "imagen": "images/tapetesUNI.png",
+    "imagen": "/images/tapetesUNI.png",
     "stock": 2,
     "categoria": "limpieza"
   },
   {
-    "id": 8,
+    "itemId": 8,
     "nombre": "Cera líquida Simoniz 500gr",
     "precio": 85000,
     "descripcion": "Especial para apolichar con pulidora suave. Deja una capa protecctora para el polvo y alarga el cuidado de la pintura en el ambiente",
-    "imagen": "images/silicona.png",
+    "imagen": "/images/silicona.png",
     "stock": 2,
     "categoria": "limpieza"
   },
   {
-    "id": 9,
+    "itemId": 9,
     "nombre": "Restaurador de partes negras (Internas/Externas)",
     "precio": 20000,
     "descripcion": "Ideal para restaurar la viveza de las partes internas principalmente de cuero negro o sintético oscuro.",
-    "imagen": "images/restaurador.png",
+    "imagen": "/images/restaurador.png",
     "stock": 20,
     "categoria": "limpieza"
   }

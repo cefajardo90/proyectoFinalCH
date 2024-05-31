@@ -4,7 +4,7 @@ const GridHome = () => {
       <div className="row justify-content-center">
         <div className="col-auto">
           <div className="card" style={{ width: "18rem" }}>
-            <img src="images/Banner1.jpg" className="card-img-top" alt="..." />
+            <img src="/images/Banner1.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">LUMINARIA LED/ALÓGENA</h5>
               <p className="card-text">
@@ -19,7 +19,7 @@ const GridHome = () => {
         </div>
         <div className="col-auto">
           <div className="card" style={{ width: "18rem" }}>
-            <img src="images/Banner1.jpg" className="card-img-top" alt="..." />
+            <img src="/images/Banner1.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">LIMPIEZA Y CUIDADO</h5>
               <p className="card-text">
@@ -34,7 +34,7 @@ const GridHome = () => {
         </div>
         <div className="col-auto">
           <div className="card" style={{ width: "18rem" }}>
-            <img src="images/Banner1.jpg" className="card-img-top" alt="..." />
+            <img src="/images/Banner1.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">ACCESORIOS Y LUJOS</h5>
               <p className="card-text">
@@ -50,7 +50,7 @@ const GridHome = () => {
       </div>
       <div className="row">
         <div className="card text-bg-dark">
-          <img src="images/GridDelivery.jpg" className="card-img" alt="..." />
+          <img src="/images/GridDelivery.jpg" className="card-img" alt="..." />
           <div className="card-img-overlay">
             <h4 className="card-title">
               ENVÍO CONTRAENTREGA / PAGO ANTICIPADO
