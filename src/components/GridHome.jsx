@@ -1,15 +1,14 @@
 const GridHome = () => {
   return (
     <div className="cotainer-fluid">
-      <div className="row justify-content-center">
+      <div className="row justify-content-center my-3">
         <div className="col-auto">
           <div className="card" style={{ width: "18rem" }}>
-            <img src="/images/Banner1.jpg" className="card-img-top" alt="..." />
+            <img src="/images/bombillos.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">LUMINARIA LED/ALÓGENA</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Toda la luminaria para tu vehículo dependiendo de la carga/tipo de conexión elétrica y según la disposición que requieras.
               </p>
               <a href="#" className="btn btn-primary">
                 Ver artículos
@@ -19,12 +18,11 @@ const GridHome = () => {
         </div>
         <div className="col-auto">
           <div className="card" style={{ width: "18rem" }}>
-            <img src="/images/Banner1.jpg" className="card-img-top" alt="..." />
+            <img src="/images/cuidado.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">LIMPIEZA Y CUIDADO</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Protege tu vehículo de los factores ambiente que pueden llegar a deteriorar gravemente la pintura e incluso las latas de tu vehículo.
               </p>
               <a href="#" className="btn btn-primary">
                 Ver artículos
@@ -34,12 +32,11 @@ const GridHome = () => {
         </div>
         <div className="col-auto">
           <div className="card" style={{ width: "18rem" }}>
-            <img src="/images/Banner1.jpg" className="card-img-top" alt="..." />
+            <img src="/images/lujos.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">ACCESORIOS Y LUJOS</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Todo lo referente a accesorios para personalizar tu vehículo y darte un estílo único al manejar. ¡Enchula tu maquina!.
               </p>
               <a href="#" className="btn btn-primary">
                 Ver artículos

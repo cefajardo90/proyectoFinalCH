@@ -31,7 +31,7 @@ const Cart = () => {
           <table className="table">
             <tbody>
             <tr>
-                <td className="text-end" colSpan={5}>
+                <td className="text-end" colSpan={6}>
                   <button className="btn text-white bg-dark rounded-0"    onClick={clear}              >
                     Vaciar carrito
                   </button>
@@ -44,7 +44,8 @@ const Cart = () => {
                   </td>
                   <td className="align-middle text-center">{item.nombre}</td>
                   <td className="align-middle text-center">${item.precio}</td>
-                  <td className="align-middle text-center">{item.quantity}</td>
+                  <td className="align-middle text-center">x{item.quantity}</td>
+                  <td className="align-middle text-center">${item.quantity * item.precio}</td>
                   <td className="align-middle text-end">
                     <img src={trash} title="Borrar producto" alt="Borrar producto" width={32} 
                         onClick={() => {removeItem(item.itemId)}}/>
@@ -52,13 +53,12 @@ const Cart = () => {
                 </tr>
               ))}
               <tr>
-                <td className="text-end" colSpan={2}>
+                <td className="text-end" colSpan={4}>
                   <b>TOTAL:</b>
                 </td>
                 <td>
                   <b>${getTotalPrice()}</b>
                 </td>
-                <td>&nbsp;</td>
                 <td className="text-end">
                   <Link
                     to={"/checkout"}

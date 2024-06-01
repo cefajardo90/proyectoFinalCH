@@ -1,10 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "./context/CartContext";
+import { Link } from "react-router-dom";
 //import arrayProductos from "./catalog/products.json";
 import { addDoc, collection, getDocs, getFirestore } from "firebase/firestore";
 
 const Checkout = () => {
-  const {cart, getCountProducts, getTotalPrice}  = useContext(CartContext);
+  const {cart, clear, getCountProducts, getTotalPrice}  = useContext(CartContext);
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [telefono, setTelefono] = useState("");
@@ -41,6 +42,21 @@ const Checkout = () => {
   }*/
 
   const generarCompra = () =>{
+    if (nombre === "" ){
+      return(
+        <div className="container my-5">
+          <div className="row">
+            <div className="col">
+              <div className="alert alert-danger d-flex-center" role="alert">
+                <h2>Por favor ingrese los datos para continuar con la compra.</h2>
+                {console.log("Entró al mensaje")}
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    }
+
     const buyer = {nombre:nombre, email:email, telefono:telefono};
     const items = cart.map(item => ({id:item.itemId, title:item.nombre, price:item.precio}));
     const date = new Date();
@@ -52,14 +68,18 @@ const Checkout = () => {
     addDoc(ordersCollection, order).then(data => {
         setOrderId(data.id);
     }); 
-
+    setNombre("");
+    setEmail("");
+    setTelefono("");
+    clear();
     /* const itemsCollection = collection(db, "inventario");
     arrayProductos.forEach(item => {
         addDoc(itemsCollection, item);
     }) */
+    console.log("Mi Id de orden: "+order);
   }
 
-  if (getCountProducts() == 0) {
+  if (getCountProducts() == 0 && orderId.data=="") {
     return (
       <div className="container my-5">
         <div className="row">
@@ -77,6 +97,7 @@ const Checkout = () => {
   }
   return (
     <div className="container my-5">
+      {!orderId ? 
       <div className="row">
         <div className="col text-start">
             <form>
@@ -114,10 +135,13 @@ const Checkout = () => {
             </table>
         </div>
       </div>
+      :""}
       <div className="row">
         <div className="col">
-                {orderId ? <div className="alert alert-success" role="alert"> 
-                Tu orden de compra se realizó satisfactoriamente con código: {orderId}</div>:""}
+          {orderId ? (<div className="alert alert-success" role="alert"> 
+            <p>Tu orden de compra se realizó satisfactoriamente con código: {orderId}</p>
+            <Link to={"/"} className="btn text-white bg-dark my-5 rounded-0">
+            Volver a página principal</Link></div>):""}
         </div>
       </div>
     </div>
